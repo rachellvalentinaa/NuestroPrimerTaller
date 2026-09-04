@@ -29,7 +29,7 @@ public class ValidacionEntradaWhile {
         }
         
         else {
-            etapa_vida = "TERcera edad";
+            etapa_vida = "Tercera edad";
         }
 
         System.out.println("Su estapa de vida es: " + etapa_vida);
