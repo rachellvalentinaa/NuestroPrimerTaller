@@ -16,15 +16,18 @@ public class EstadisticasGrupo {
         int reprobados = 0;
 
         for (int i = 0; i < 10; i++) {
-            do {
+            
+            /*do {
                 notas[i] = sc.nextDouble();
 
                 if (notas[i] < 0.0 || notas[i] > 5.0) {
                     System.out.println("Ingrese una nota válida entre 0.0 y 5.0:");
                 }
-            } while (notas[i] < 0.0 || notas[i] > 5.0);
+            }*/ 
+            
+            /*while (notas[i] < 0.0 || notas[i] > 5.0);
 
-            suma += notas[i];
+            suma += notas[i];*/
 
             if (i == 0) {
                 masAlta = notas[i];
