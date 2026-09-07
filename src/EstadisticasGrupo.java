@@ -16,19 +16,11 @@ public class EstadisticasGrupo {
         int reprobados = 0;
 
         for (int i = 0; i < 10; i++) {
+            System.out.print("Ingrese la nota del alumno " + (i + 1) + ": ");
+             notas[i] = sc.nextDouble();
+
+             suma += notas[i];
             
-            /*do {
-                notas[i] = sc.nextDouble();
-
-                if (notas[i] < 0.0 || notas[i] > 5.0) {
-                    System.out.println("Ingrese una nota válida entre 0.0 y 5.0:");
-                }
-            }*/ 
-            
-            /*while (notas[i] < 0.0 || notas[i] > 5.0);
-
-            suma += notas[i];*/
-
             if (i == 0) {
                 masAlta = notas[i];
                 masBaja = notas[i];
@@ -53,14 +45,20 @@ public class EstadisticasGrupo {
                 reprobados++;
             }
         }
+        System.out.println();
 
         double promedio = suma / 10;
 
         System.out.println("Promedio del grupo: " + promedio);
+        System.out.println();
         System.out.println("Nota más alta: " + masAlta + " (Estudiante " + (posAlta + 1) + ")");
+        System.out.println();
         System.out.println("Nota más baja: " + masBaja + " (Estudiante " + (posBaja + 1) + ")");
+        System.out.println();
         System.out.println("Aprobados: " + aprobados);
+        System.out.println();
         System.out.println("Reprobados: " + reprobados);
+        System.out.println();
 
         sc.close();
     }

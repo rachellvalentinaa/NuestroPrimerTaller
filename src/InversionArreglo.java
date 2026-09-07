@@ -12,9 +12,23 @@ public class InversionArreglo {
             arreglo[i] = sc.nextInt();
         }
 
+        System.out.println();
+
+        System.out.print("Arreglo Original: ");
         for (int i = 0; i < n; i++) {
-            System.out.print(arreglo[i] + ", ");    
+            System.out.print(arreglo[i] + " ");    
         }
+
+        System.out.println();
+        System.out.println();
+
+        System.out.print("Arreglo Invertido: ");
+        for (int i = n - 1; i >= 0; i--) {
+            System.out.print(arreglo[i] + " ");    
+        }
+
+        System.out.println();
+        System.out.println();
 
         sc.close();
         
