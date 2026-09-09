@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class ConversiónTemperatura  {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
     Scanner sc = new Scanner(System.in);    
 
     System.out.print("Ingresa la temperatura en grados Celsius:");

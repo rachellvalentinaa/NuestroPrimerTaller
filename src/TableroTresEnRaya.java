@@ -42,7 +42,9 @@ public class TableroTresEnRaya {
 
                 if (fila < 0 || fila > 2 || columna < 0 || columna > 2) {
                     System.out.println("La posición no es válida.");
-                } else if (tablero[fila][columna] != ' ') {
+                } 
+                
+                else if (tablero[fila][columna] != ' ') {
                     System.out.println("Esa casilla ya está ocupada.");
                 }
 
@@ -69,7 +71,9 @@ public class TableroTresEnRaya {
             if (!ganador) {
                 if (turno == 1) {
                     turno = 2;
-                } else {
+                } 
+                
+                else {
                     turno = 1;
                 }
             }
@@ -79,7 +83,8 @@ public class TableroTresEnRaya {
 
         if (ganador) {
             System.out.println("Ganó el jugador " + (turno == 1 ? 'X' : 'O'));
-        } else {
+        } 
+        else {
             System.out.println("Empate");
         }
 
